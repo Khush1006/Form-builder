@@ -1,0 +1,29 @@
+{
+  "name": "form-builder",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.7",
+    "@mui/x-date-pickers": "^7.22.2",
+    "axios": "^1.7.7",
+    "next": "15.0.3",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react-hook-form": "^7.53.2",
+    "react-hot-toast": "^2.4.1"
+  },
+  "devDependencies": {
+    "@iconify/react": "^5.0.2",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3"
+  }
+}

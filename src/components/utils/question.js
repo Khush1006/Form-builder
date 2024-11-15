@@ -1,0 +1,1 @@
+export const questionType = ["Text", "Number", "Select", "MultiSelect", "Date", "Boolean", "File"]
