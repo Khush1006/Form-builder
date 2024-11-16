@@ -1,11 +1,11 @@
 import DeclarationForm from '@/components/form-builder/Form'
-import React from 'react'
+import React, { Suspense } from 'react'
 
 const page = () => {
   return (
-    <div>
+    <Suspense fallback={<div>Loading dynamic component...</div>}>
       <DeclarationForm />
-    </div>
+    </Suspense>
   )
 }
 
