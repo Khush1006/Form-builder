@@ -97,9 +97,9 @@ console.log(question,'question')
                 questionType:questionType,
                 sectionNumber: question?.sectionNumber?.value || '', // Assign sectionNumber value or keep it as empty
 
-                ...(questionType === "Upload File" ? { attachments } : {}),
+                ...(questionType === "File" ? { attachments } : {}),
 
-                ...(questionType === "Select" || questionType === "Multiple Choice"
+                ...(questionType === "Select" || questionType === "MultiSelect"
                     ?
                      { options }
                     : {}),
