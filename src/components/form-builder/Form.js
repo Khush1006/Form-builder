@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState ,Suspense  } from 'react'
 
 import { useRouter, useSearchParams } from 'next/navigation'
 
@@ -195,6 +195,7 @@ console.log(question,'question')
 
 
     return (
+        <Suspense fallback={<div>Loading...</div>}>
         <Box width='100%' height='100%'>
         <Container maxWidth='lg'>
         <Box>
@@ -505,6 +506,7 @@ console.log(question,'question')
                     }
             </Container>
         </Box>
+        </Suspense>
     )
 }
 
