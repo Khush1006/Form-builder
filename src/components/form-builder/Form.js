@@ -113,7 +113,7 @@ console.log(question,'question')
 
         try {
             const response = await axios.post("http://52.66.121.156:4087/api/declaration-form/template/save", payload,{headers:{
-                Authorization:'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzAzYWU5NzkzMzRjOTVjZjgzNDJhYWUiLCJpYXQiOjE3MzE2NDk1MDEsImV4cCI6MTczMTczNTkwMX0.kvw4xhPhIt_Ep54qga_ZvF6e723vzFhLtTusxy9eSAc'
+                Authorization:`bearer ${token}`
             }}); 
             console.log("Response:", response.data);
             reset(); // Reset the form on success
