@@ -30,7 +30,7 @@ const AllTemplates = () => {
       try {
         const response = await axios.get('http://52.66.121.156:4087/api/declaration-form/template/search',{
             headers:{
-                Authorization:'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzAzYWU5NzkzMzRjOTVjZjgzNDJhYWUiLCJpYXQiOjE3MzE2NDk1MDEsImV4cCI6MTczMTczNTkwMX0.kvw4xhPhIt_Ep54qga_ZvF6e723vzFhLtTusxy9eSAc'
+                Authorization:'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzAzYWU5NzkzMzRjOTVjZjgzNDJhYWUiLCJpYXQiOjE3MzIxNjc4NTAsImV4cCI6MTczMjI1NDI1MH0.og1fQIXgGltgDppaxTHkAW18xZG7feA4IN4jfOgpg-A'
             }
         }); // Replace with your API
         setData(response.data?.data?.data);
